@@ -34,7 +34,7 @@ const handler = createMcpHandler(async (server) => {
     questions: questions,
     description:
       "Creates a new icebreaker room with a button to join the room.",
-    widgetDomain: "https://nextjs.org/docs",
+    widgetDomain: process.env.NEXT_PUBLIC_APP_URL,
   };
 
   server.registerResource(
